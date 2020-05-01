@@ -1,0 +1,220 @@
+@media (min-width: 992px)
+	.menu
+		.menu_link
+			font-size: 13px
+		.menu_item
+			padding-right: 20px
+	.promo 
+		.promo_header
+			font-size: 50px
+	.reasons_wrapper
+		grid-template-columns: 6fr 6fr
+		grid-template-rows: repeat(4, 1fr)
+		align-items: center;
+	.reason_item
+		grid-template-columns: 114px 4fr
+		grid-template-rows: 1fr
+		align-items: center
+    	text-align: left
+	.subheader_btn, .promo_btn
+		+btn_cover
+	footer 
+		.wrapper 
+			margin-top: 32px
+			display: grid 
+			grid-template-columns: 1fr 360px 1fr
+			.social_media
+				order: 1
+				margin: 0
+				margin-right: 9px
+				justify-self: left
+			.footer_main-inf
+				order: 2
+				.first-line
+					a
+						h6
+							font-size: 15px
+				.second-line
+					margin-top: 12px
+					justify-content: space-between
+				.language
+					margin-top: 19px
+			.store_links
+				order: 3
+				margin: 0
+				justify-self: right 
+				a 
+					display: inline-block
+					min-height: 27px 
+					
+
+
+@media (max-width: 991px)
+	.menu
+		.menu_link
+			font-size: 10px
+		.menu_item
+			padding-right: 8px
+	.subheader 
+		.subheader_logo
+			margin-top: 21px
+		.logo_descr
+			font-size: 11px
+	.subheader_phone
+		font-size: 18px
+	.subheader_btn
+		max-width: 100%
+		font-size: 12px
+	.promo
+		.promo_header
+			font-size: 40px
+		.promo_subheader 
+			font-size: 30px
+
+@media (max-width: 767px)
+	.menu
+		position: fixed
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		flex-direction: column
+		background-color: rgba(0, 0, 0, 0.8) 
+		align-items: center
+		justify-content: center
+		z-index: 101
+		transition: 0.06s all
+		&_active
+			left: 0
+	.menu_item
+		padding-right: 0px
+		border: none
+	.menu_link
+		font-size: 20px
+	nav
+		position: relative
+	.hamburger
+		display: inline
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 20px
+		z-index: 102
+		cursor: pointer
+		&_line 
+			height: 2px
+			width: 100%
+			margin-bottom: 2px
+			background-color: #ffffff
+			transition: 0.5s all
+		&_active
+			.hamburger_line 
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: rotate(45deg)
+	.xs-hidden
+		display: none		
+	.xs-visible
+		display: block
+	.subheader_phone 
+		margin-top: 25px
+		font-size: 18px
+		font-weight: 400 
+		color: white
+		min-width: 145px
+		text-align: center
+	.subheader_btn 
+		margin-top: 9px 
+		padding: 4px 0 
+		width: 145px 
+		height: 29px 
+		font-size: 12px 
+		float: right
+		text-align: center
+	.promo
+		.promo_header
+			line-height: 45px
+@media (max-width: 575px)
+	nav,.empty_space  
+		height: 30px
+	.subheader
+		height: 60px
+	.subheader_logo
+		margin: auto auto
+	.logo_descr
+		display: none
+	.subheader_phone
+		margin-top: 11px
+		min-width: 110px
+		font-size: 12px
+		font-weight: 400
+	.subheader_btn 
+		margin-top: 9px 
+		padding: 6px 0 8px 0 
+		width: 110px 
+		height: 22px 
+		font-size: 10px 
+		float: right
+		line-height: 10px
+	.promo
+		padding: 113px 0 35px 0
+		min-height: 400px
+		.promo_header
+			font-size: 33px 
+		.promo_subheader
+			margin-top: 30px
+			font-size: 20px
+		.promo_descr
+			display: none
+		.promo_btn
+			margin-top: 72px
+			width: 210px
+			height: 50px
+			font-size: 16px	
+	h3
+		font-size: 16px
+		line-height: 18px
+		margin-top: 15px 	
+	h5
+		font-size: 14px
+		margin-top: 23px
+	.label 
+		line-height: 10px 
+	.reasons 
+		padding: 22px 0 50px 0
+		h6 
+			font-size: 14px
+	.reasons_wrapper
+		margin-top: 26px 
+	.app
+		padding: 20px 0 40px 0
+	.app_item
+		max-width: 100%
+	.app_item-subtitle
+		font-size: 18px
+	.choice 
+		padding: 25px 0 33px 0
+		min-height: 495px 
+		h5
+			&:last-child 
+				font-size: 17px
+				color: white
+	footer 
+		.wrapper
+			max-width: 300px
+			.store_links 
+				a 
+					img 
+						width: 80px
+
+
+	
+			
+		
+		

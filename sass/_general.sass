@@ -1,0 +1,449 @@
+.header_main 
+	position: relative
+
+.empty_space
+	height: 50px
+
+header 
+	position: relative
+	position: fixed
+	width: 100%
+	z-index: 100
+nav 
+	height: 50px 
+	background-color: #212121 
+.menu 
+	display: flex 
+	justify-content: space-between 
+	padding: 10px 70px 
+	margin: 0 
+	list-style-type: none 
+	.menu_link 
+		font-weight: 300 
+		font-size: 15px 
+		color: white 
+	.menu_item 
+		border-right: 2px dotted black 
+		padding-right: 28px 
+		&:last-child 
+			border-right: 0 
+			padding-right: 0 
+.hamburger
+	display: none
+.subheader 
+	position: absolute
+	width: 100% 
+	height: 84px 
+	background-color: rgba(0, 0, 0, .8) 
+	.subheader_logo 
+		display: block 
+		max-width: 100% 
+		margin-top: 16px
+		img 
+			max-width: 100% 
+	.logo_descr 
+		margin-top: 6px 
+		font-weight: 400 
+		font-size: 13px 
+		color: white 
+		opacity: 0.5 
+.subheader_call 
+	margin-top: 19px 
+	font-size: 13px 
+	font-weight: 300 
+	color: white 
+	text-align: right 
+	line-height: 24px 
+.subheader_phone 
+	margin-top: 8px 
+	font-size: 22px 
+	font-weight: 400 
+	color: white 
+	float: right 
+	line-height: 12px 
+.subheader_btn 
+	margin-top: 19px 
+	padding: 11px 0 
+	width: 172px 
+	height: 46px 
+	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12) 
+	border: none 
+	border-radius: 4px 
+	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%) 
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) 
+	color: white 
+	font-size: 14px 
+	font-weight: 400 
+	text-transform: uppercase 
+	text-align: center 
+	-webkit-border-radius: 4px 
+	-moz-border-radius: 4px 
+	-ms-border-radius: 4px 
+	-o-border-radius: 4px 
+		
+.promo
+	padding: 150px 0 135px 0 
+	min-height: 800px 
+	background: url(/assets/images/bck_promo.png) center center/cover no-repeat
+	background-color: rgba(0, 0, 0, 0.5)
+	background-blend-mode: color-dodge
+	.promo_header 
+		margin: 0 
+		font-size: 60px 
+		font-weight: 700 
+		text-transform: uppercase 
+		line-height: 60px 
+		color: white 
+		text-align: center 
+	.promo_subheader 
+		margin: 0 
+		margin-top: 22px 
+		font-size: 36px 
+		font-weight: 700 
+		text-transform: uppercase 
+		line-height: 36px 
+		color: white 
+		text-align: center 
+	.promo_descr 
+		margin-top: 23px 
+		font-size: 18px 
+		font-weight: 400 
+		line-height: 24px 
+		color: white 
+		text-align: center 
+.promo_btn 
+	display: block 
+	margin: 118px auto 0 auto 
+	width: 255px 
+	height: 63px 
+	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12) 
+	border: none 
+	border-radius: 4px 
+	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%) 
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) 
+	color: white 
+	text-align: center 
+.reasons 
+	padding: 70px 0 65px 0 
+	h3 
+		margin-top: 36px 
+	h6 
+		margin-top: 10px 
+		text-align: justify 
+.label 
+	margin: 0 auto 
+	padding: 8px 13px 
+	max-width: 113px 
+	font-size: 11px 
+	background-color: black 
+	color: white 
+	text-align: center 
+	text-transform: uppercase 
+h3 
+	margin: 0 
+	font-size: 38px 
+	font-weight: 700 
+	color: #222222 
+	text-transform: uppercase 
+	text-align: center 
+	line-height: 48px
+.reasons_wrapper
+	margin: 0 auto
+	margin-top: 40px 	
+	display: grid 
+	grid-template-columns: repeat(auto-fit, minmax(290px, 6fr)) 
+	grid-template-rows: repeat(auto-fit, minmax(290px, 1fr))
+	grid-column-gap: 90px 
+	grid-row-gap: 33px 
+	align-items: flex-start
+.reason_item 
+	margin: 0 auto;
+	display: grid 
+	grid-template-rows: repeat(auto-fit, minmax(114px, 1fr)) 
+	grid-template-columns: repeat(auto-fit, minmax(300px, 400px))
+	grid-column-gap: 24px 
+	align-items: flex-start
+	justify-items: center
+	text-align: center
+.reason_descr
+	margin-top: 5px
+h5 
+	margin-top: 0 
+	font-size: 17px 
+	font-weight: 400 
+	color: #409DB4 
+
+h6 
+	margin: 0 
+	font-size: 15px 
+	font-weight: 300 
+	color: #202020
+
+.app
+	padding: 48px 0 80px 0
+	min-height: 864px
+	background: url(/assets/images/app_bck.png) center center/cover no-repeat  
+	h3
+		margin-top: 38px
+	h5
+		margin-top: 19px
+		color: #222222
+		text-align: center
+	&_wrapper
+		margin: 0 auto
+		margin-top: 32px 		
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(290px, 320px))
+		grid-template-rows: repeat(auto-fit, minmax(254px, 280px))
+		grid-column-gap: 67px
+		grid-row-gap: 19px
+		justify-content: center
+		min-width: 290px
+		min-height: 580px
+	&_item 
+		min-height: 254px
+		max-height: 280px
+		position: relative
+		opacity: 0.8
+		padding-top: 92px
+		&_1
+			background: url(/assets/images/mobile_screen_1.png) center center/cover no-repeat
+			background-color: rgba(0, 0, 0, 0.7)
+			background-blend-mode: color-dodge
+		&_2
+			background: url(/assets/images/mobile_screen_2.png) center center/cover no-repeat
+			background-color: rgba(0, 0, 0, 0.7)
+			background-blend-mode: color-dodge
+		&_3
+			background: url(/assets/images/mobile_screen_3.png) center center/cover no-repeat
+			background-color: rgba(0, 0, 0, 0.7)
+			background-blend-mode: color-dodge
+		&_4
+			background: url(/assets/images/mobile_screen_4.png) center center/cover no-repeat
+			background-color: rgba(0, 0, 0, 0.7)
+			background-blend-mode: color-dodge
+		&_5
+			background: url(/assets/images/mobile_screen_5.png) center center/cover no-repeat
+			background-color: rgba(0, 0, 0, 0.7)
+			background-blend-mode: color-dodge
+		&_6
+			background: url(/assets/images/mobile_screen_6.png) center center/cover no-repeat
+			background-color: rgba(0, 0, 0, 0.7)
+			background-blend-mode: color-dodge
+	&_item-subtitle 
+		color: #ffffff
+		font-family: Roboto
+		font-size: 24px
+		font-weight: 400
+		line-height: 31px
+		text-transform: uppercase
+		text-align: center
+	&_item-plus
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		bottom: 35px
+		left: 50%
+		transform: translateX(-50%)
+		width: 26px
+		height: 26px
+		background-color: #000000
+		margin: 0 auto
+		border-radius: 100%
+		cursor: pointer
+		&::before
+			content: ''
+			display: block
+			width: 14px
+			height: 2px
+			background-color: $bl-color
+		&::after
+			content: ''
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			display: block
+			width: 2px
+			height: 14px
+			background-color: $bl-color
+		&:hover
+			&::before, &::after 
+				background-color: $r-color
+				transition: 0.3s all
+
+
+
+/* SECTION CHOICE */
+
+.choice 
+	padding: 57px 0 84px 0
+	background: url(../assets/images/car_bck.png) 
+	.label
+		background-color: white
+		color: black
+	h3
+		margin-top: 32px
+		color: white
+	h5
+		margin-top: 19px
+		color: white
+		text-align: center
+		&:last-child 
+			margin-top: 4px
+			color: black
+	img 
+		display: block
+		margin: 0 auto
+		margin-top: 56px
+		max-width: 100%
+
+/* REQUIRE SECTION *
+
+.require
+	padding: 68px 0 84px 0
+	h3
+		margin-top: 33px
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0
+	&_title
+		color: $bl-color
+		font-size: 22px
+		font-weight: 400
+	&_list
+		margin-top: 22px
+		list-style-type: none
+		padding-left: 50px
+		li 
+			position: relative
+			margin-bottom: 10px
+			font-size: 17px
+			font-weight: 300
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -31px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url(../assets/images/mark_ok.svg) center center/cover no-repeat
+	&_descr
+		margin-top: 25px
+		font-size: 17px
+		font-weight: 300
+		color: $bl-color
+	.warning
+		.require_title
+			color: $r-color
+		.require_list
+			li 
+				&::before
+					background: url(../assets/images/mark_no.png) center center/cover no-repeat
+
+/* WORLDWIDE SECTION *///I
+
+.worldwide
+	padding: 49px 0
+	background: url(../assets/images/bck_2.png)
+	position: relative 
+	min-height: 718px
+	.label
+		background-color: white
+		color: black
+		max-width: 76px
+	h3 
+		margin-top: 32px
+		color: white
+	h5 
+		margin-top: 20px
+		color: white 
+		text-align: center
+	h6 
+		position: absolute
+		bottom: 49px
+		left: 50%
+		transform: translateX(-50%)
+		color: $bl-color
+		text-transform: uppercase
+		text-align: center
+		a 
+			color: inherit
+
+/* FOOTER */
+
+footer 
+	padding: 14px 23px 31px 23px
+	.blue-line
+		margin: 0 auto
+		width: 299px
+		height: 4px
+		background-color: $bl-color
+	.wrapper
+		margin-top: 22px
+		display: flex 
+		flex-direction: column
+		justify-content: center
+		.social_media
+			text-align: center
+			order: 2
+			margin-top: 20px
+			margin-right: 9px
+			img 
+				display: inline
+		.footer_main-inf
+			margin: 0 auto
+			order: 1
+			text-transform: uppercase
+			min-width: 276px
+			max-width: 360px
+			.first-line
+				display: flex
+				justify-content: space-around
+				a
+					color: inherit
+					h6
+						display: block
+						height: 10px
+						color: #070716
+						font-size: 14px
+						font-weight: 300
+			.second-line
+				margin-top: 13px
+				min-width: 240px
+				display: flex
+				justify-content: stretch
+				justify-content: safe center
+				a
+					color: inherit
+					max-width: 100%
+					h6
+						margin-right: 6px
+						font-size: 11px
+						color: #999999
+						font-weight: 300
+			.language
+				margin-top: 13px
+				font-size: 11px
+				font-weight: 400
+				color: $bl-color
+				text-align: center
+		.store_links
+			margin: 0 auto
+			margin-top: 20px
+			order: 3
+			justify-self: right 
+			a 
+				display: inline-block
+				min-height: 27px
+.black-line
+	width: 100%
+	height: 8px
+	background-color: black 
+
+.xs-visible
+	display: none
+		
+
